@@ -22,9 +22,9 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8mb4;
 
 
-INSERT INTO `users` VALUES ('1','Deidre-Ann','Jemison',md5('password123'),'adminproject2.com',
+INSERT INTO `users` VALUES ('1','Deidre-Ann','Jemison','password123','adminproject2.com',
 '24-11-20 10:45:00')
-INSERT INTO `users` VALUES ('2','Michael','Goldson','jt password123','adminproject2.com',
+INSERT INTO `users` VALUES ('2','Michael','Goldson','password123','adminproject2.com',
 '24-11-20 10:50:00')
 INSERT INTO `users` VALUES ('3','Orlando','Williams','password123','adminproject2.com',
 '24-11-20 10:55:00')
