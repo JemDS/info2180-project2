@@ -12,62 +12,66 @@ html{
     text-decoration: none;
     
 }
+body {
+    background: none;
+    max-height: 90%;;
+    margin:0;
+    padding:0;
 
-body{
-   color:#fff;
 }
 
-.wrapper{
+
+.sidebar{
     display:flex;
     position:relative;
 }
 
-.wrapper .sidebar{
+ .sidebar{
     position:fixed;
     width:200px;
     height:100%;
-    background-color: #4b4;
-    padding:30px 0;
+    background-color: #2d4838;
+   
 }
 
-.wrapper .sidebar ul li{
+ .sidebar ul li{
     padding:15px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(225,225,0,0.05);
 }
 
-.wrapper .sidebar ul li a{
+ .sidebar ul li a{
     color:#bdb8d7;
     display:block;
 }
 
-.wrapper .sidebar ul li .fas{
+ .sidebar ul li .fas{
     width:25px;
 }
 
-.wrapper .sidebar ul li:hover{
-    background:rgba(255, 255, 255, 0.801);
+ .sidebar ul li:hover{
+    background:rgba(255, 255, 255, 0.76);
 }
 
-.wrapper .sidebar ul li:hover a{
+ .sidebar ul li:hover a{
     color:#fff;
 }
 
-.wrapper .user-form{
+ .user-form{
     height: 100%;
     width:100%;
     margin-left: 250px;
 }
 
 
-.wrapper .user-form h1{
+ .user-form h1{
     padding: 20px;
     background: #fff;
     color:#717171;
     border-bottom: 1px solid #e0e4e8;
    
 }
-.button .btn-primary{
+ .btn-primary{
     background-color: rgb(68, 143, 187);
     padding: 6px 16px;
     font-size: 14px;
@@ -97,4 +101,7 @@ body{
     border-radius: 5px;
 }
 
- 
+form{
+    display:flex;
+    flex-direction: column;
+}
