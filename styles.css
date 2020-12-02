@@ -4,6 +4,15 @@ html{
 	font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans", sans-serif;
 
 }
+header{
+    background-color: black;
+	color: #FFFFFF;
+	justify-content: center;
+    align-items: center;
+    padding:1em;
+    
+
+}
 *{
     margin:0;
     padding:0;
@@ -30,31 +39,29 @@ body {
     position:fixed;
     width:200px;
     height:100%;
-    background-color: #2d4838;
+    background-color: #f0f0f0;
+    display:flex;
+    flex-direction: row;
    
 }
 
  .sidebar ul li{
     padding:15px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(225,225,0,0.05);
 }
 
  .sidebar ul li a{
-    color:#bdb8d7;
+    color:black;
     display:block;
 }
 
- .sidebar ul li .fas{
-    width:25px;
-}
 
  .sidebar ul li:hover{
     background:rgba(255, 255, 255, 0.76);
 }
 
  .sidebar ul li:hover a{
-    color:#fff;
+    color:black;
 }
 
  .user-form{
@@ -67,8 +74,8 @@ body {
  .user-form h1{
     padding: 20px;
     background: #fff;
-    color:#717171;
-    border-bottom: 1px solid #e0e4e8;
+    color:black;
+    
    
 }
  .btn-primary{
@@ -84,24 +91,33 @@ body {
     width: 25em;
     height: 2.2em;
     border-radius: 5px;
+    background-color: #f0f0f0;
 }
 #ln{
     width: 25em;
     height: 2.2em;
     border-radius: 5px;
+    background-color: #f0f0f0;
 }
 #pw{
     width: 25em;
     height: 2.2em;
     border-radius: 5px;
+    background-color: #f0f0f0;
 }
 #em{
     width: 25em;
     height: 2.2em;
     border-radius: 5px;
+    background-color: #f0f0f0;
 }
 
 form{
     display:flex;
     flex-direction: column;
+}
+img{
+    float:left;
+    width:10%;
+    margin-right:10px;   
 }
