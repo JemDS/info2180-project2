@@ -9,7 +9,7 @@ $( document ).ready(function() {
     let newissue = $("#newissue");
     let add = $("#add");
     let logout = $("#logout");
-    
+
 
     //HOME AJAX
     home.on('click', function() {

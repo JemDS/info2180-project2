@@ -1,30 +1,32 @@
 <?php
-
 header("Access-Control-Allow-Origin: *");
 
 $query = $_GET['query'];
 $query = htmlentities($query);
-
 ?>
 
 <?php
-if($query=="Home") {?>
-  <h1> Home</h1>
+if($query=="Home") {
+  include 'Home.php'
+  ?>
 
 <?php
-} elseif ($query=="Add") {?>
-  <h1> Add</h1>
+} elseif ($query=="Add") {
+  include 'AddUser.php'
+  ?>
 
 <?php
-} elseif($query=="NewIssue") {?>
-  <h1> New Lssue</h1>
+} elseif($query=="NewIssue") {
+  include 'NewIssue.php'
+  ?>
 
 <?php
-} elseif($query=="Logout") {?>
-  <h1> Logout</h1>
+} elseif($query=="Logout") {
+  include 'Logout.php'
+  ?>
 
 <?php
 } else { ?>
-  <h1> Home</h1>
+  <h1> TEST Else</h1>
 <?php        
     } ?>
