@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XSS Vulnerability in Add User Form</title>
+</head>
+<body>
+
+	<header>
+		<p>BugMe Issue Tracker</p>
+	</header>
+
+	    <div class="sidebar">
+        <ul>
+            <li><img src="home.png" width="25px" height="25px"  /><a href="#">Home</a></li>
+            <li><img src="add.png" width="25px" height="25px"  /><a href="#">Add User</a></li>
+            <li><img src="issue.png" width="25px" height="25px"  /><a href="#">New Issue</a></li>
+            <li><img src="log.png" width="22px" height="22px"  /><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <main class="xss-info">
+    	<article>
+  			<h1>XSS Vulnerability in Add User Form</h1>
+    		<p>Issue #100</p>
+
+    		<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us."Pastels Céline leggings leather shorts Saint Laurent beanie street style Fjallraven. Motif skirt strong eyebrows Choupette printed jacket grunge white chambray shirt denim. Colette chunky sole loafers trouser surf pop Prada backpack washed out statement Bag 'N' Noun silver collar. Rope necklace oversized A.P.C. rose gold knitwear capsule Raf Simons.
+    		</p>
+
+    		<ul>
+            <li>Issue created on December 2,2020 at 7:30PM by Deidre-Ann Jemison</li>
+            <li>Last Updated on December 2,2020 at 7:50PM</li>
+            </ul>
+    	</article>
+
+    	<aside>
+    		<div class="sidebox">
+	    		<p>Assigned To</p> 
+	    		<p>Deidre-Ann Jemison</p> 
+	    		<br>
+				<p>Type:</p>
+				<p>Proposal</p>	
+	    		<br>
+				<p>Priority:</p>
+				<p>Major</p>	
+	    		<br>
+				<p>Status:</p>
+				<p>Open</p>	
+    		</div>
+    	</aside>
+
+    	<div class="btn">
+    		<button type="submit" class="btn1">Marked as Closed</button>
+    		<br>
+    		<button type="submit" class="btn2">Marked as Closed</button>
+    	</div>
+    </main>
+
+</body>
+</html>
