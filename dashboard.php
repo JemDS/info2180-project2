@@ -19,7 +19,7 @@
             <li><img src="img/home.png" width="25px" height="25px"  /><a id="home" href="#">Home</a></li>
             <li><img src="img/add.png" width="25px" height="25px"  /><a id="add" href="#">Add User</a></li>
             <li><img src="img/issue.png" width="25px" height="25px"  /><a id="newissue" href="#">New Issue</a></li>
-            <li><img src="img/log.png" width="22px" height="22px"  /><a id="logout" href="#">Logout</a></li>
+            <li><img src="img/log.png" width="22px" height="22px"  /><a id="logout" href="http://localhost/info2180-finalproject/login.php">Logout</a></li>
         </ul>
     </div>
 

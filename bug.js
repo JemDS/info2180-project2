@@ -77,11 +77,13 @@ $( document ).ready(function() {
              }
         }
     }
-
+    
+    /*
     //LOGOUT AJAX
     logout.on('click', function() {
+        var url = "http://localhost/info2180-finalproject/login.php";
         httpRequest.onreadystatechange = LogoutClick;
-        httpRequest.open('GET', url + "Logout");
+        httpRequest.open('GET', url);
         httpRequest.send();
     });
 
@@ -90,15 +92,14 @@ $( document ).ready(function() {
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
             if (httpRequest.status === 200) {
                 var response = httpRequest.responseText;
-                result.innerHTML = response;
-                      
+                result.innerHTML = response;    
             } 
             else {
                 console.log(httpRequest.status)
                 alert('There was a problem with the request.');
              }
         }
-    }
+    }*/
 
     /*let btn = $("form .btn");
 
@@ -125,5 +126,5 @@ $( document ).ready(function() {
             }
         }
     } */
-    
+
 });
