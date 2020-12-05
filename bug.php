@@ -7,22 +7,22 @@ $query = htmlentities($query);
 
 <?php
 if($query=="Home") {
-  include 'Home.php'
+  include_once 'Home.php'
   ?>
 
 <?php
 } elseif ($query=="Add") {
-  include 'AddUser.php'
+  include_once 'AddUser.php'
   ?>
 
 <?php
 } elseif($query=="NewIssue") {
-  include 'NewIssue.php'
+  include_once 'NewIssue.php'
   ?>
 
 <?php
 } elseif($query=="Logout") {
-  include 'Logout.php'
+  include_once 'Logout.php'
   ?>
 
 <?php
