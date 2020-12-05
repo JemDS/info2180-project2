@@ -13,8 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $hidden === $formID) {
     $email = htmlentities($email);
     $password = htmlentities($password);
 
-    #Connect to database and compare username and password (to replace 'adminproject2.com' and 'password' line 7)
-    if ($email =='adminproject2.com' && $password=='password123'){
+    #Connect to database and lookup email and password using email from the form (replace 'admin@project2.com' and 'password123' with result)
+    $dbemail = 'admin@project2.com';
+    $dbpassword = 'password123';
+    
+    if ($email == $dbemail && $password== $dbpassword){
         
         $_SESSION['email'] = $email;
         #get autoincremented id from user and store in session so that it can be use across multiple pages
