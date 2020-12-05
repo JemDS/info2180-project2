@@ -11,33 +11,6 @@ $( document ).ready(function() {
     let add = $("#add");
     let logout = $("#logout");
 
-    let btn = $("form .btn");
-
-    //LOGIN AJAX
-    btn.on('click', function() {
-        var username = $('#username').val();
-        var password = $('#password').val();
-        console.log(username + " " + password)
-        var postStr = "username=" + username + "&" + "password=" + password
-        var url = "http://localhost/info2180-finalproject/login.php?"
-        httpRequest.onreadystatechange = LoginClick;
-        httpRequest.open('GET', url+postStr);
-        httpRequest.send();
-    });
-
-
-    function LoginClick() {
-        if (httpRequest.readyState === XMLHttpRequest.DONE) {
-            if (httpRequest.status === 200) {
-                var response = httpRequest.responseText;
-                display.innerHTML = response;        
-            }
-            else {
-                alert('There was a problem with the request.');
-             }
-        }
-    }
-
 
     //HOME AJAX
     home.on('click', function() {
@@ -82,7 +55,6 @@ $( document ).ready(function() {
              }
         }
     }
-   
 
     //ADD AJAX
     add.on('click', function() {
@@ -128,4 +100,30 @@ $( document ).ready(function() {
         }
     }
 
+    /*let btn = $("form .btn");
+
+    //LOGIN AJAX
+     btn.on('click', function() {
+        var username = $('#username').val();
+        var password = $('#password').val();
+        console.log(username + " " + password)
+        var postStr = "username=" + username + "&" + "password=" + password
+        var url = "http://localhost/info2180-finalproject/login.php?"
+        httpRequest.onreadystatechange = LoginClick;
+        httpRequest.open('GET', url+postStr);
+        httpRequest.send();
+    });
+
+    function LoginClick() {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+            if (httpRequest.status === 200) {
+                var response = httpRequest.responseText;
+                display.innerHTML = response;        
+            }
+            else {
+                alert('There was a problem with the request.');
+            }
+        }
+    } */
+    
 });

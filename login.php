@@ -1,13 +1,16 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-$username = $_GET['username'];
-$password = $_GET['password'];
-$username = htmlentities($username);
-$password = htmlentities($password);
-
-echo $username;
-echo $password;
-
-//include 'dashboard.php'
-?>
+    #Connect to database and compare username and password (to replace line 7)
+    if ($email =='adminproject2.com' && $password=='password123'){
+        include_once 'dashboard.php';
+    } 
+    else{
+        header('Location: http://localhost/info2180-finalproject/login.html');
+    }
+}
+else{
+    header('Location: http://localhost/info2180-finalproject/login.html');
+}

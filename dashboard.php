@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Sign-up Page</title>
     <link rel="stylesheet" type="text/css" href="styles1.css">
@@ -58,3 +60,4 @@
     </main>
 
 </body>
+</html>
