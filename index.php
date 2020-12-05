@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $hidden === $formID) {
     $pwd = htmlentities($pwd);
 
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $sqlusername, $sqlpassword);
-    $stmt = $conn->query("SELECT id, email, password FROM Users WHERE Users.email ='$email'");
+    $stmt = $conn->query("SELECT id, email, password FROM Users WHERE Users.email ='$email';");
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     #Connect to database and lookup email and password using email from the form (replace 'admin@project2.com' and 'password123' with result)
@@ -39,13 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $hidden === $formID) {
         
         $_SESSION['email'] = $dbemail;
         $_SESSION['userid'] = $dbid;
-
         #get autoincremented id from user and store in session so that it can be use across multiple pages
-        #$_SESSION['userid'] = $userid;
 
         include_once 'dashboard.php';
-    } 
-    else{
+
+    } else{
         #message that email or password is incorrect should be included
         header('Location: http://localhost/info2180-finalproject/login.html');
         session_unset();
