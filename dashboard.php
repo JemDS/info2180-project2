@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <title>Sign-up Page</title>
-    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles1.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="bug.js" type="text/javascript"></script>
+	<script src="scripts/bug.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -26,35 +26,9 @@
     <main>
          <div>
             <div id="result" class="user-form">
-            <h1>Create Issue</h1>
-            <form action="#" method="post">
-                <label for="ti">Title:</label>
-                <input type="text" id="ti" name="title">
-                
-                <label for="de">Description</label>
-                <input type="text" id="de" name="description"><br>
-                
-                <label for="as">Assigned To</label>
-                <input type="text" id="as" name="assignedTo"><br>
-                
-                <label for="ty">Type</label>
-                <select name="type" id="ty">
-                <option value="bug">Bug</option>
-                <option value="propsal">Proposal</option>
-                <option value="task">Task</option>
-                </select><br>
 
-
-                <label for="pr">Priority</label>
-                <select name="priority" id="pr">
-                <option value="Minor">Minor</option>
-                <option value="Major">Major</option>
-                <option value="Critical">Critical</option>
-                </select><br>
-
-
-                <input type="submit" class="btn-primary">
-            </form>
+            <?php include 'Home.php'?>
+            
             </div>
         </div>
     </main>

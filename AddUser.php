@@ -1,5 +1,4 @@
-
-    <h1>NEW USER</h1>
+<h1>NEW USER</h1>
     <form action="#" method="post">
         <label for="fn">First Name:</label>
         <input type="text" id="fn" name="firstname"><br>

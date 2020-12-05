@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $hidden === $formID) {
     $dbpassword = 'password123'; */
 
     foreach ($results as $row):
+        $dbid = $row['id'];
         $dbemail = $row['email'];
         $dbpassword = $row['password'];
     endforeach;
@@ -36,7 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $hidden === $formID) {
     if (password_verify($pwd, $dbpassword)) {
     #if ($email == $dbemail){
         
-        $_SESSION['email'] = $email;
+        $_SESSION['email'] = $dbemail;
+        $_SESSION['userid'] = $dbid;
+
         #get autoincremented id from user and store in session so that it can be use across multiple pages
         #$_SESSION['userid'] = $userid;
 
