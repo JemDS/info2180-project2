@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<div class="thename">
+	<title>XSS Vulnerability in Add User Form</title>
+	<link rel="stylesheet" type="text/css" href="styles3.css">
+	</div>
+</head>
+<body>
+
+	<header>
+		<p>BugMe Issue Tracker</p>
+	</header>
+        <div class="wrapper">
+	    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-home"></i>Add User</a></li>
+            <li><a href="#"><i class="fas fa-home"></i>New Issue</a></li>
+            <li><a href="#"><i class="fas fa-home"></i>Logout</a></li>
+        </ul>
+    </div>
+
+    <main class="xss-info">
+    	<article>
+  			<h1>XSS Vulnerability in Add User Form</h1>
+    		<p>Issue #100</p>
+
+    		<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us."Pastels Céline leggings leather shorts Saint Laurent beanie street style Fjallraven. Motif skirt strong eyebrows Choupette printed jacket grunge white chambray shirt denim. Colette chunky sole loafers trouser surf pop Prada backpack washed out statement Bag 'N' Noun silver collar. Rope necklace oversized A.P.C. rose gold knitwear capsule Raf Simons.
+    		</p>
+
+    		<ul>
+            <li>Issue created on December 2,2020 at 7:30PM by Deidre-Ann Jemison</li>
+            <li>Last Updated on December 2,2020 at 7:50PM</li>
+            </ul>
+    	</article>
+
+    	<aside>
+    		<div class="sidebox">
+	    		<h3>Assigned To</h3> 
+	    		<h2>Deidre-Ann Jemison</h2> 
+	    		<br>
+				<h3>Type:</h3>
+				<h2>Proposal</h2>	
+	    		<br>
+				<h3>Priority:</h3>
+				<h2>Major</h2>	
+	    		<br>
+				<h3>Status:</h3>
+				<h2>Open</h2>	
+    		</div>
+    	
+
+    	<div class="btn">
+    		<button type="submit" class="btn1">Marked as Closed</button>
+    		<br>
+    		<button type="submit" class="btn2">Marked as Closed</button>
+        </div>
+    </aside>
+    </main>
+
+</body>
+</html>
